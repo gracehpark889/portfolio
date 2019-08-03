@@ -1,0 +1,234 @@
+
+.footer {grid-area:footer;}
+.navbar {grid-area: navbar;}
+.container_1 {grid-area: container_1;}
+.container_2 {grid-area:container_2;}
+.container_3 {grid-area:container_3;}
+
+.grid {
+    display:grid;
+    height:500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "container_1 container_1 container_1 container_1"
+    "container_2 container_2 container_2 container_2  "
+    "container_3 container_3 container_3 container_3 "
+    "footer footer footer footer";
+}
+/*NAVIGATION BAR*/
+.navbar {
+    margin: 50px;
+    display:flex;
+    align-items:center;
+}
+.name {
+    flex-grow:2;
+}
+.name h1 {
+    font-size: 27px;
+    font-family: 'Amiri',serif;
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0px
+} 
+.menu li {
+    display: inline;
+    text-align: center;
+    padding: 20px 8px;
+}
+.navbar a, .social_links a {
+    position:relative;
+    text-decoration:none;
+}
+.about_link {
+    text-decoration:none;
+    color:black;
+    margin-left: 60px;
+    padding-bottom:10px;
+}
+.about_link:hover {
+    text-decoration: none;
+    color:#BD8D69;
+    font-weight: 700;
+}
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background:#BD8D69;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+a:hover:before,
+a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+  text-decoration:none;
+}
+.burger_image {
+    width:40px;
+    display:none;
+    position:relative;
+}
+.burger_image2 {
+    display:none;
+}
+@media only screen and (max-width:770px) {
+    .header {
+        margin: 50px;
+        display:flex;
+        align-items:center;
+    }
+    .menu {
+        display:none;
+    }
+    .burger_image {
+        width: 40px;
+        display: inline-block;
+        z-index:1;
+    }
+    .burger_image:hover {
+        z-index: -2;
+    }
+    .burger_image2 {
+        width: 40px;
+        position: absolute;
+        top: 70px;
+        right: 58px;
+        display: inline-block;
+        z-index:-1;
+    }
+}
+/*1*/
+.container_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.backgroundphoto {
+    width: 100%;
+}
+
+.container_1 h1 {
+    font-family: 'Amiri',serif;
+    position:absolute;
+    padding:50px;
+}
+
+/*2*/
+.container_2 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding: 70px 0px 70px 0px;
+}
+.projects {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+}
+.b {
+    background-color: #F7F7F7;
+    width: 504px;
+    height: 380px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    color:white;
+    text-align:center;
+}
+.title {
+    font-family: 'Amiri',serif;
+}
+.b:hover .overlay {
+    opacity:0.8;
+}
+.choosr_photo {
+    width:360px;
+}
+.hopeforpaws {
+    width:490px;
+}
+
+/*3*/
+.container_3 {
+    background-color:#F7F7F7;
+    display:flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*FOOTER*/
+.footer {
+    display:flex;
+}
+.s {
+    padding:10px;
+    width:50px;
+}
+.s:hover {
+    padding: 10px;
+    background-color: #F8F1E2;
+}
+.social_links {
+    display:flex;
+}
+.footer_note {
+    flex-grow:2;
+    display:flex;
+    align-items:center;
+}
+.footer_note h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left:50px;
+}
+@media only screen and (max-width:600px) {
+    .footer {
+        flex-direction:column;
+        display:flex;
+    }
+    .footer_note {
+        justify-content: center;
+    }
+    .social_links {
+        justify-content:center;
+    }
+}
