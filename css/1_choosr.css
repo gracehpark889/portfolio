@@ -4,7 +4,6 @@
     margin:50px;
     display:flex;
     align-items:center;
-    background-color:blue;
 }
 .home {
     text-decoration:none;
@@ -140,9 +139,8 @@ a:before {
 
 /* ROW 3 - Mockup Image */
 .picture2 {
-    display: flex;
+    margin:0 auto;
     justify-content: center;
-    margin:60px 0px;
 }
 .choosr_mockup {
     max-width:500px;
