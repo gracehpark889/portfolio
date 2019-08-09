@@ -1,4 +1,3 @@
-
 /* NAVIGATION */
 .navbar {
     margin:50px;
@@ -54,11 +53,6 @@ a:hover {
     color:#BD8D69;
     font-weight:700;
 }
-.burger_image {
-    width:40px;
-    display:none;
-    position:relative;
-}
 a:before {
     content:"";
     position: absolute;
@@ -79,7 +73,7 @@ a:before {
     text-decoration:none;
 }
 
-/* ROW 1 */
+/* HEADING PHOTO */
 .row1{
     margin-top:-50px;
     transform: translateY(50px);
@@ -90,16 +84,16 @@ a:before {
     align-items: center;
     justify-content: center;
 }
-.choosr_left {
+.hopeforpaws_left {
     width:650px;
     position:relative;
 }
-.choosr_left_text {
+.hopeforpaws_left_text {
     display:flex;
     align-items: center;
-    padding-left:130px;
+    padding-left:80px;
 }
-.choosr_left_text h1 {
+.hopeforpaws_left_text h1 {
     font-family: 'Amiri',serif;
     font-size: 80px;
     font-weight: 700;
@@ -108,10 +102,12 @@ a:before {
     font-family: 'Amiri',serif;
     font-size:90px;
 }
+.bodytext{
+    font-size:21px;
+}
 .info {
     padding-left:20px;
 }
-
 /* MULTIPLE */
 .paragraph {
     max-width: 768px;
@@ -119,44 +115,30 @@ a:before {
     font-size:21px;
     text-align:left;
 }
-.row {
-    justify-content:center;
-}
-
-/* ROW 2 */
-.case_study {
-    text-align: center;
-    margin: 0 auto;
-}
 .title {
     font-size:30px;
     font-family:'Amiri',serif;
+}
+.bodytitle {
+    font-size:30px;
+    font-family:'Amiri',serif;
+    margin:0 auto;
+    text-align:left;
+    max-width: 768px;
 }
 .bold {
     font-weight: 700;
 }
 
+/*ROW 1*/
+.case_study {
+    text-align: center;
+    margin: 0 auto;
+}
 
-/* ROW 3 - Mockup Image */
-.picture2 {
-    display: flex;
-    justify-content: center;
-    margin:60px 0px;
-}
-.choosr_mockup {
-    width:46.6%;
-    
-}
-/* ROW 4-Research Text */
-.research {
-    text-align:left;
-    justify-content: center;
-    align-items: center;
-    display:flex;
-}
-/* ROW 5 - Interview Image */
-.choosr_interview {
-    width:56.6%;
+/*ROW 2 RESEARCH / INTERVIEW*/
+.hfp_interview {
+    width:70.6%;
     transform: translateY(50px);
     opacity: 0;
 }
@@ -167,111 +149,36 @@ a:before {
     display:flex;
     margin:60px 0px;
 }
-/* ROW 6-Survey Results */
-.survey_results {
-    text-align:left;
-    justify-content: center;
-    align-items: center;
-    display:flex;
+/*USER PERSONA */
+.hfppersona {
+    width: 55.6%;
+    transform: translateY(50px);
+    opacity: 0;
 }
-/* ROW 7-Key Takeaways */
-.keytakeaway {
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    margin: 60px 0px;
-}
-.right_keytake{
+.persona_container {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
-    width: 470px;
-    height: 260px;
+    margin:60px 0px;
 }
-.key_text {
-    padding:20px;
+/*USER STORYBOARD*/
+.hfpstoryboard {
+    width:55.6%;
 }
-.nickgrace {
-    width:500px;
-}
-/* ROW 8-Competitor Analysis */
-.companaly {
-    color:black;
+.storyboard_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* ROW 9-User Persona */
-.persona {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin:60px 0px;
-    flex-direction:column;
-}
-.persona_image {
-    width:60.6%;
-    transform: translateY(50px);
-    opacity: 0;
-}
-.image_container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:50px 0px;
-}
-/* ROW 10 & 11-User Flow */
-.userflow {
-    display:flex;
-    justify-content:center;
-}
-.userflow_image {
-    width:56.7%;
-}
-/* ROW 12-Feature Prioritization */
-.feature {
-    display:flex;
-    justify-content: center;
-    flex-direction:column;
-    align-items:center;
-}
-.feature_image {
-    width:56.6%;
-}
-/* ROW 13-Sketching & Wireframe*/
-.sketchwire {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin:60px 0px;
-    flex-direction:column;
-}
-.sketchwire_image {
-    width:56.7%;
-    transform: translateY(50px);
-    opacity: 0;
-}
-/* ROW 14-TESTING */
-.testing{
-    text-align:left;
-    justify-content: center;
-    align-items: center;
-    display:flex;
-}
-.card-deck {
-    padding-top:50px;
-}
-/* ROW 15-DESIGN */
-.designcontainer {
-    display:flex;
-    justify-content: center;
-}
-.designphoto {
-    width:56.7%;
-    transform: translateY(50px);
-    opacity: 0;
-}
+
+
+
+
+
+
+
+
 
 
 /*FOOTER*/

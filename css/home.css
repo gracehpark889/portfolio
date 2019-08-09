@@ -181,17 +181,12 @@ a:focus:before {
 .choosr_photo {
     width:360px;
 }
+
 .hopeforpaws {
     width:490px;
 }
-
-/*3*/
-.container_3 {
-    background-color:#F7F7F7;
-    display:flex;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
+.usedu {
+    width: 550px;
 }
 
 
