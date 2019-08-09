@@ -144,7 +144,7 @@ a:before {
     margin:60px 0px;
 }
 .choosr_mockup {
-    width:46.6%;
+    max-width:500px;
     height:auto;
     
 }
@@ -157,7 +157,7 @@ a:before {
 }
 /* ROW 5 - Interview Image */
 .choosr_interview {
-    width:56.6%;
+    max-width:600px;
     transform: translateY(50px);
     opacity: 0;
 }
