@@ -27,9 +27,10 @@
     flex-grow:2;
 }
 .name h1 {
-    font-size: 27px;
-    font-family: 'Amiri',serif;
-    font-weight: normal;
+    font-size:22px;
+    font-family:Helvetica, sans-serif;
+    font-weight:normal;
+    letter-spacing: 1px;
 }
 ul {
     list-style: none;
@@ -173,7 +174,9 @@ a:focus:before {
     text-align:center;
 }
 .title {
-    font-family: 'Amiri',serif;
+    font-family: helvetica,sans-serif;
+    font-size:21px;
+    font-weight:700;
 }
 .b:hover .overlay {
     opacity:0.8;

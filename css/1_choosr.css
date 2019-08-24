@@ -17,9 +17,10 @@
     flex-grow:2;
 }
 .name h1 {
-    font-size:27px;
-    font-family: 'Amiri',serif;
+    font-size:22px;
+    font-family:Helvetica, sans-serif;
     font-weight:normal;
+    letter-spacing: 1px;
 }
 ul {
     list-style:none;
@@ -105,47 +106,65 @@ a:before {
     font-weight: 700;
 }
 .header {
-    font-family: 'Amiri',serif;
-    font-size:90px;
+    font-family: helvetica,sans-serif;
+    font-size:36px;
+    font-weight:700;
 }
-.info {
-    padding-left:20px;
-}
+
 
 /* MULTIPLE */
 .paragraph {
     max-width: 768px;
     margin: 0 auto;
-    font-size:21px;
+    font-size:17px;
     text-align:left;
+    font-family:helvetica,sans-serif;
 }
 .row {
     justify-content:center;
 }
+.highlight {
+    font-weight:700;
+}
 
 /* ROW 2 */
+.casestudy_container {
+    max-width:768px;
+}
 .case_study {
-    text-align: center;
-    margin: 0 auto;
+    background-color:#EFF6FA;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .title {
-    font-size:30px;
-    font-family:'Amiri',serif;
+    font-size:22px;
+    font-family:helvetica, sans-serif;
+    font-weight:700;
+    line-height:60px;
 }
 .bold {
     font-weight: 700;
+    font-size:12px;
+    letter-spacing: 4px;
+}
+.overview {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
 /* ROW 3 - Mockup Image */
 .picture2 {
-    margin:0 auto;
-    justify-content: center;
+    text-align:center;
+    margin: 40px 0px;
 }
 .choosr_mockup {
-    max-width:500px;
-    height:auto;
-    
+    max-width:56.7%;
+    height:auto;  
 }
 /* ROW 4-Research Text */
 .research {
@@ -156,7 +175,7 @@ a:before {
 }
 /* ROW 5 - Interview Image */
 .choosr_interview {
-    max-width:600px;
+    max-width:56.6%;
     transform: translateY(50px);
     opacity: 0;
 }
@@ -175,6 +194,12 @@ a:before {
     display:flex;
 }
 /* ROW 7-Key Takeaways */
+.row_takeaway {
+    background-color:#F2FAFF
+}
+.takeaway_container {
+    height:600px;
+}
 .keytakeaway {
     display:flex;
     flex-wrap:wrap;
@@ -195,11 +220,17 @@ a:before {
     padding:20px;
 }
 .nickgrace {
-    width:500px;
+    width:400px;
+}
+.keytake_list {
+    padding-left:20px;
 }
 /* ROW 8-Competitor Analysis */
 .companaly {
     color:black;
+}
+.competitor {
+    margin:0px 0px 60px 0px;
 }
 
 /* ROW 9-User Persona */
@@ -207,7 +238,7 @@ a:before {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:60px 0px;
+    margin:40px 0px;
     flex-direction:column;
 }
 .persona_image {
@@ -223,8 +254,7 @@ a:before {
 }
 /* ROW 10 & 11-User Flow */
 .userflow {
-    display:flex;
-    justify-content:center;
+    text-align:center;
 }
 .userflow_image {
     width:56.7%;
@@ -246,7 +276,7 @@ a:before {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:60px 0px;
+    margin:40px 0px;
     flex-direction:column;
 }
 .sketchwire_image {
@@ -260,19 +290,46 @@ a:before {
     justify-content: center;
     align-items: center;
     display:flex;
+    padding:0;
 }
 .card-deck {
     padding-top:50px;
 }
+.scenario_test {
+    width:76.7%;
+    padding-top:30px;
+}
+.userphotos{
+    margin-right:1%;
+    margin-left:1%;
+}
 /* ROW 15-DESIGN */
 .designcontainer {
-    display:flex;
-    justify-content: center;
+    text-align:center;
 }
 .designphoto {
     width:56.7%;
     transform: translateY(50px);
     opacity: 0;
+}
+/* PROTOTYPE BUTTON */
+.prototypebtn_container {
+    text-align:center;
+}
+.prototype_btn{
+    width: 250px;
+    height: 70px;
+    color:white;
+    font-family:helvetica,sans-serif;
+    letter-spacing:1px;
+    font-weight:700;
+    font-size:14px;
+    border-color:#93beb9;
+    background-color:#93beb9;
+}
+.prototype_btn:hover {
+    background-color:#93beb9;
+    transform:scale(1.1);
 }
 
 
