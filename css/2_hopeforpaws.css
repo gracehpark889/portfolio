@@ -113,6 +113,9 @@ a:before {
 
 
 /* MULTIPLE */
+.r {
+    margin-top:50px
+}
 .paragraph {
     max-width: 768px;
     margin: 0 auto;
@@ -120,7 +123,22 @@ a:before {
     text-align:left;
     font-family:helvetica,sans-serif;
 }
-
+.quote {
+    font-style:italic;
+    font-size: 28px;
+    text-align:center;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.54);
+    line-height:44px;
+}
+.blockquote {
+    font-style:italic;
+    font-size: 25px;
+    text-align:center;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.54);
+    line-height:44px;
+}
 .title {
     font-size:22px;
     font-family:helvetica, sans-serif;
@@ -167,11 +185,30 @@ a:before {
     justify-content: center;
     flex-direction: column;
 }
+
+/* BACKGROUND */
+
+.background {
+    margin-top:50px;
+}
+.center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.initial-quescont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hfp-initial-ques {
+    width:120%;
+}
 /*Testing*/
 
 /*ROW 2 RESEARCH / INTERVIEW*/
 .hfp_interview {
-    width:70.6%;
+    width:60.6%;
     transform: translateY(50px);
     opacity: 0;
 }
@@ -181,7 +218,23 @@ a:before {
     align-items: center;
     display:flex;
     margin:60px 0px;
+    flex-direction: column;
 }
+
+/* key takeaways */
+.hfpteam {
+    width:100%;
+}
+.keytake {
+    margin-top:50px;
+    background:#FFEBE2;
+    padding:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*USER PERSONA */
 .hfppersona {
     width: 55.6%;
@@ -194,14 +247,67 @@ a:before {
     align-items: center;
     margin:60px 0px;
 }
-/*USER STORYBOARD*/
-.hfpstoryboard {
-    width:55.6%;
+
+/* Competitor Analysis */
+.hfp_comp {
+    width:70.6%;
 }
-.storyboard_container {
+.hfpcomp_container {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.hfp_graph {
+    width:55.6%;
+}
+/* SWOT Analysis */
+.swot_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hfp_swot {
+    width:70.6%;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+/* Sketching & Wireframes */
+.hfpwireframe_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hfp_wireframe {
+    width:60.6%;
+}
+
+/* Userflow */
+.userflow_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hfp_userflow {
+    width:60.6%;
+}
+
+/* User interviews */
+.card-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:blue;
+}
+
+/*Iterations */
+.iteration-split{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.iterationimg {
+    width:100%;
 }
 
 

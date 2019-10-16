@@ -156,7 +156,17 @@ a:before {
     flex-direction: column;
 }
 
-
+/* BACKGROUND*/
+.statscontainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-40px;
+}
+.choosr_stats {
+    max-width:200%;
+    height:auto;
+}
 /* ROW 3 - Mockup Image */
 .picture2 {
     text-align:center;
@@ -172,7 +182,12 @@ a:before {
     justify-content: center;
     align-items: center;
     display:flex;
+    margin-top:50px;
 }
+.survey {
+    padding-bottom: 70px;
+}
+
 /* ROW 5 - Interview Image */
 .choosr_interview {
     max-width:56.6%;
@@ -303,6 +318,25 @@ a:before {
     margin-right:1%;
     margin-left:1%;
 }
+/*ITERATIONS */
+.choosr_iterations{
+    width:76.7%; 
+    padding-top:30px;
+}
+.iteration_box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.iterations {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:80px 0px;
+    flex-direction:column;
+    background-color:#F2FAFF;
+    padding: 100px 0px;
+}
 /* ROW 15-DESIGN */
 .designcontainer {
     text-align:center;
@@ -312,6 +346,17 @@ a:before {
     transform: translateY(50px);
     opacity: 0;
 }
+/* Final Prototype */
+.choosr_perspective {
+    width:46.7%;
+}
+.choosrp_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 /* PROTOTYPE BUTTON */
 .prototypebtn_container {
     text-align:center;
