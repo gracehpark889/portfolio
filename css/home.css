@@ -1,6 +1,6 @@
 
 .footer {grid-area:footer;}
-.navbar {grid-area: navbar;}
+.navbar_container {grid-area: navbar_container;}
 .container_1 {grid-area: container_1;}
 .container_2 {grid-area:container_2;}
 .container_3 {grid-area:container_3;}
@@ -11,20 +11,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "navbar navbar navbar navbar"
+    "outercont outercont outercont outercont"
     "container_1 container_1 container_1 container_1"
     "container_2 container_2 container_2 container_2  "
     "container_3 container_3 container_3 container_3 "
     "footer footer footer footer";
 }
 /*NAVIGATION BAR*/
+.outercont {
+    max-width:1032px;
+    margin: 0 auto;
+}
+
 .navbar {
-    margin: 50px;
+    margin: 50px 0px 50px 0px;
     display:flex;
-    align-items:center;
 }
 .name {
-    flex-grow:2;
+    justify-content: flex-start;
 }
 .name h1 {
     font-size:22px;
@@ -41,7 +45,6 @@ ul {
 } 
 .menu li {
     display: inline;
-    text-align: center;
     padding: 20px 8px;
 }
 .navbar a, .social_links a {
@@ -196,6 +199,8 @@ a:focus:before {
 /*FOOTER*/
 .footer {
     display:flex;
+    margin: 0 auto;
+    max-width: 1032px;
 }
 .s {
     padding:10px;
@@ -216,7 +221,6 @@ a:focus:before {
 .footer_note h2 {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 13px;
-    margin-left:50px;
 }
 @media only screen and (max-width:600px) {
     .footer {
